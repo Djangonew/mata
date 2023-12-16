@@ -187,17 +187,17 @@ dispatcher.add_handler(MessageHandler(Filters.chat_type.private,start))
 dispatcher.add_error_handler(error)
 
 
-updater.start_webhook(listen="0.0.0.0",
+updater.start_webhook(listen="35.230.85.45",
                           port=int(PORT),
-                          url_path=TOKEN,
-webhook_url = "https://+RAILWAY_APP_NAME+".up.railway.app/ + TOKEN)
-updater.start_webhook(listen="0.0.0.0",
+                          url_path=TOKEN)
+updater.bot.setWebhook('https://web-production-02ae.up.railway.app/' + TOKEN)
+updater.start_webhook(listen="35.230.85.45",
 
                       port=PORT,
 
                       url_path=TOKEN,
 
-                      webhook_url="https://"+RAILWAY_APP_NAME+".up.railway.app/" + TOKEN)
+                      webhook_url="https://web-production-02ae.up.railway.app/" + TOKEN)
 
 updater.idle()
 
