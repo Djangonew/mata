@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from telegram import Update,KeyboardButton,ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler,CallbackContext, MessageHandler,Filters
 import os
-PORT = int(os.environ.get('PORT','8443'))
+PORT = int(os.environ.get('PORT','80'))
 TOKEN = os.environ.get('BOT_TOKEN', "6535500946:AAHW7j41O5NRaXpZuI_bKKo-UfMxD0np3yY")
 RAILWAY_APP_NAME=os.environ.get('RAILWAY_APP_NAME',None)
 owner=os.environ.get('OWNER', "1748872441")
